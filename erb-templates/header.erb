@@ -1,0 +1,17 @@
+<div class="header d-flex flex-column justify-content-between">
+	<div class="d-flex flex-row justify-content-between align-items-start">
+		<p class="name"  style="min-width:5cm;"><%= @header["name"] %></p>
+		<p class="title align-self-end"><%= @header["title"] %></p>
+		<!--<img class="qrcode" src="<%= @cv["header"]["qrcode"]["img"] %>" />-->
+		<%= renderTemplate('qrcode.erb') %>
+	</div>
+    <p class="subtitle"><%= @header["subtitle"] %></p>
+    <div class="row vertical-align-center">
+	    <div class="col d-flex flex-row justify-content-around align-items-center">
+	    	<% @personal_info = @header["personal-info"]%>
+	    	<%= renderTemplate('personal-info.erb') %>
+	    	<% @personal_profile = @header["personal-profile"]%>
+	    	<%= renderTemplate('personal-profile.erb') %>
+	    </div>
+    </div>
+</div>

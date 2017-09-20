@@ -1,0 +1,131 @@
+{
+	"header":{
+		"name":"John Doe",
+		"title": "Worker",
+		"subtitle": "Looking for a job in a country",
+		"qrcode":{"link_target":"http://github.com/", "img":"placeholder_qrcode.png"},
+		"personal-info":{
+			"postal-address":{"icon":"ion-android-mail","text":"A street 1, City, Country"},
+			"phone-number":{"icon":"ion-android-phone-portrait","text":"(+00) 12 34 56 78 90"},
+			"email-address":{"icon":"ion-at","text":"some.address@mail.domain"},
+			"birthdate":{"icon":"ion-calendar","text":"01.01.1970"},
+			"driving-license":{"icon":"ion-android-car","text":"Driving License"},
+			"working-permit":{"icon":"ion-card","text":"Some Working permit"}
+		},
+		"personal-profile":{
+			"title": "Personal profile",
+			"adjectives":["Quality 1", "Quality 2", "Quality 3"],
+			"career-objective":"some very nice career objectif that allow people to live and to thrive",
+			"strong-points":[
+				"n years of experience in specific skill",
+				"a strong point that this worker wants to light up"
+			]
+		}
+	},
+	"skills":{
+		"sections":[
+			{
+				"title":"First set of Skills",
+				"elements":["Skill 1", "Skill 2", "Skill 3", "Skill 4", "Skill 5", "Skill 6", "Skill 7"]
+			},
+			{
+				"title":"Second set",
+				"elements":["First skill", "A bit more longer skill name", "Who said that there is a limit to these fields", "Skill 4"]
+			},
+			{
+				"title":"3rd skill set",
+				"elements":["This is becoming", "to be a bit repetitive"]
+			},
+			{
+				"title":"Skill set the 4th",
+				"elements":["Skill 1", "Skill 2", "Skill 3", "Skill 4", "Skill 5", "Skill 6"]
+			},
+			{
+				"title":"5th but not the last",
+				"elements":["Skill 1", "Skill 2", "Skill 3", "Skill 4"]
+			},
+			{
+				"title":"Last one set",
+				"elements":["Skill 1", "Skill 2", "Skill 3"]
+			}
+		]
+	},
+	"content":{
+		"employments":
+		[
+			{
+				"start":"Jan. N-2",
+				"duration":"1 year and 10 months",
+				"job-title":"A job title",
+				"description":"a very good job description that gives a lot of information of what the candidate did for this company",
+				"company-postal-address":"The company address" 
+			},
+			{
+				"start":"Jan. N-4",
+				"duration":"2 years and 5 months",
+				"job-title":"A job title",
+				"description":"a very good job description that gives a lot of information of what the candidate did for this company",
+				"company-postal-address":"The company address" 
+			},
+			{
+				"start":"Jan. N-5",
+				"duration":"9 months",
+				"job-title":"A job title",
+				"description":"a very good job description that gives a lot of information of what the candidate did for this company",
+				"company-postal-address":"The company address" 
+			},
+			{
+				"start":"Jan. N-7",
+				"duration":"1 year and 10 months",
+				"job-title":"A job title",
+				"description":"a very good job description that gives a lot of information of what the candidate did for this company",
+				"company-postal-address":"The company address" 
+			},
+			{
+				"start":"Feb. N-9",
+				"duration":"1 year and 10 months",
+				"job-title":"A job title",
+				"description":"a very good job description that gives a lot of information of what the candidate did for this company",
+				"company-postal-address":"The company address" 
+			}
+		],
+		"education":[
+			{
+				"graduation-year":"N-3",
+				"diploma-name":"Master Degree",
+				"specialization-name":"A very cool specialization",
+				"merit":true,
+				"school-postal-address":"A very nice school"
+			},
+			{
+				"graduation-year":"N-5",
+				"diploma-name":"Bachelor",
+				"specialization-name":"A cool specialization",
+				"merit":false,
+				"school-postal-address":"A good school"
+			}
+		],
+		"associations":
+		[
+			{
+			"start":"Jan. N",
+			"duration":"1 year",
+			"job-title":"Member of awesome club",
+			"description":"doing awesome stuff for awesome club",
+			"company-postal-address":"Somewhere in the world"
+			},
+			{
+			"start":"Jan. N-6",
+			"duration":"5 years",
+			"job-title":"Member of another awesome club",
+			"description":"doing awesome stuff for this other awesome club.",
+			"company-postal-address":"Somewhere else in the world"
+			}
+		],
+		"interests":
+		[
+			{"sports":["football","rugby"]},
+			{"cultural":["books","movies", "music"]}
+		]
+	}
+}

@@ -1,0 +1,315 @@
+@media print, screen {
+	@page
+	{
+		width: 21cm;
+		height: 29.7cm;
+		margin :0cm;
+	}
+
+	html
+	{
+		width: 21cm;
+		height: 29.7cm;
+		margin :0cm;
+		padding:0cm;
+		font-family: 'Roboto Regular';
+		font-size: 10pt;
+	}
+
+	body
+	{
+		width: 21cm;
+		height: 29.7cm;
+		margin :0cm;
+		padding:0cm;
+	}
+
+	.header
+	{
+		background-color: #c9a66b;/*#b3e7fb;*/
+		position: absolute;
+		top:0;
+		left:0;
+		width: 21cm;
+		height:7cm;
+		padding:0.25cm;
+
+		color: #af4425;
+	}
+
+	.header .vertical-align-center {
+	    display: flex;
+	    align-items: center;
+	}
+
+	.header p
+	{
+		margin:0;
+		padding: 0;
+	}
+
+	.header .qrcode
+	{
+		min-width:2cm;
+		min-height:2cm;
+		max-width:2cm;
+		max-height:2cm;
+		/*position: absolute; z-index: 1; top: 0.15cm; right: 0.25cm;*/
+	}
+
+	.header .centimeter
+	{
+		min-width:1cm;
+	}
+
+	.header .icon
+	{
+		font-size: 14pt;
+		line-height: 1;
+		color: #662e1c;
+	}
+
+	.header .table td
+	{
+		padding-top: 0px;
+		padding-bottom: 0px;
+		border:0px solid black;
+	}
+
+	.header .table td
+	{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.header .personal-profile
+	{
+		background-color: #ebdcb2;/*#cceffc;*/
+		padding:0.25cm;
+		max-width: 10.5cm;
+	}
+
+	.header .personal-profile h1
+	{
+		font-size: 14pt;
+		font-weight: bold;
+		text-align: center;
+		color: #662e1c;
+	}
+
+	.header .personal-profile p
+	{
+		text-align: center;
+		line-height:1.25;
+	}
+
+	.header .personal-profile p:before
+	{
+		content:'✓';
+		padding-right: 10px;
+		color: #662e1c;
+	}
+
+	.header .last-row
+	{
+		margin-top: 7.55px;
+	}
+
+	.header .name
+	{
+		font-size: 18pt;
+		font-weight: bold;
+		color: #662e1c;
+	}
+
+	.header .title
+	{
+		font-size: 20pt;
+		font-weight: bold;
+		font-style: italic;
+		text-align: center;
+		color: #662e1c;
+	}
+
+	.header .subtitle
+	{
+		font-size: 13pt;
+		font-style: italic;
+		text-align: center;
+		color: #662e1c;
+	}
+
+	.skills
+	{
+		background-color: #ebdcb2;/*#cceffc;*/
+		color: #af4425;
+		position: absolute;
+		top:7cm;
+		left:0;
+		width: 5cm;
+		height:22.7cm;
+		padding:0.25cm;
+		font-size: 10.5pt;
+	}
+
+	.skill-flex-container
+	{
+  		border: 1px dashed yellow;
+	}
+
+	.skill-flex-child
+	{
+		border: 1px dashed purple
+	}
+
+
+	.skills h2
+	{
+		font-size: 14pt;
+		font-weight: bold;
+		color: #662e1c;
+	}
+
+	.skills h3
+	{
+		font-size: 12pt;
+		font-style: italic;	
+		color: #662e1c;
+	}
+
+	.section
+	{
+		width:100%;
+		height:100%;
+	}
+
+	.skills ul
+	{
+		list-style-type:none;
+		padding-left: 10px;
+		text-align: left;
+		list-style-position:outside;
+	}
+
+	.skills li:before
+	{
+		content:'✓';
+		margin-left: -1em;
+	    margin-right: .300em;
+	    color: #662e1c;
+	}
+
+	.skills li
+	{
+		line-height: 1.25;
+	}
+
+	.skills-line
+	{
+	    min-width:4.5cm;
+	    min-height: 1px;
+	    max-width:4.5cm;
+	    max-height: 1px;
+	    border-top: 1px solid #c9a66b;
+	}
+
+	.content
+	{
+		background-color: white;
+		color: #af4425;
+		position: absolute;
+		top:7cm;
+		left:5cm;
+		width: 16cm;
+		height: 22.7cm;
+		padding-top:0.25cm;
+		padding-left: 0.25cm;
+		padding-right: 0.25cm;
+		padding-bottom:0.25cm;
+		
+		display:flex;
+  		flex-direction:column;
+  		align-items: center;
+  		justify-content: center;
+	}
+
+	.content h2
+	{
+		font-size: 14pt;
+		font-weight: bold;
+		margin-bottom: 5px;
+		color: #662e1c;
+	}
+
+	.content h3
+	{
+		font-size: 12pt;
+		font-style: italic;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: #662e1c;
+	}
+
+	.content p
+	{
+		margin:0;
+		padding: 0;
+	}
+
+	.content .title
+	{
+		color: #662e1c;
+	}
+
+	.content .lightgray
+	{
+		/*background-color: #f4f4f4;*/
+		background-color: rgba(235, 220, 178, 0.40);
+	}
+
+	.content .darkergray
+	{
+		/*background-color: #e8e8e8;*/
+		background-color: rgba(235, 220, 178, 0.60);
+	}
+
+	.content .description
+	{
+		line-height:1.2;
+	}
+
+	.content-line
+	{
+		min-width:15cm;
+	    min-height: 1px;
+	    max-width:15cm;
+	    max-height: 1px;
+	    border-top: 1px solid #662e1c;
+	}
+
+	.content-entry-line
+	{
+		padding-top: 0.075cm;
+		padding-bottom: 0.075cm;
+		padding-left: 0.33cm;
+		padding-right: 0.33cm;
+		min-width:15.5cm;
+	}
+
+	.content-entry-first-line
+	{
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	.content-entry-second-line
+	{
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	.content-interest-category
+	{
+		padding-left: 0.5cm;
+	}
+}

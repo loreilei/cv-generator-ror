@@ -4,8 +4,8 @@ require 'json'
 
 #A script to generate the html page from erb files and json file
 
-json_file = 'cv_placeholder.json'
-output-filename = 'output.html'
+json_file = 'cv_generic.json'
+output_filename = 'output.html'
 
 def titleize(title)
 	titleized=title.dup

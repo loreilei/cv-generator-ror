@@ -9,8 +9,8 @@
 			"phone-number":{"icon":"ion-android-phone-portrait","text":"(+33) 06 92 45 45 91"},
 			"email-address":{"icon":"ion-at","text":"alexandre.poirot@gmail.com"},
 			"birthdate":{"icon":"ion-calendar","text":"15.09.1989"},
-			"driving-license":{"icon":"ion-android-car","text":"Driving License and personal car"},
-			"working-permit":{"icon":"ion-card","text":"B Swiss Working permit"}
+			"driving-license":{"icon":"ion-android-car","text":"Driving license and personal car"},
+			"working-permit":{"icon":"ion-card","text":"B Swiss working permit"}
 		},
 		"personal-profile":{
 			"title": "Personal profile",
@@ -30,7 +30,7 @@
 			},
 			{
 				"title":"Networking",
-				"elements":["OSI layer protocols (TCP, UDP, IP, Wi-Fi, Ethernet, ...)", "Distributed software design", "RPC Mechanisms (Java RMI, Json-Rpc, DBus, ...)", "Multitier software design"]
+				"elements":["OSI layer protocols (TCP, UDP, IP, Wi-Fi, Ethernet, ...)", "Distributed software design", "RPC Mechanisms (Json-Rpc, DBus, ...)", "Multitier software design"]
 			},
 			{
 				"title":"System administration",
@@ -42,7 +42,7 @@
 			},
 			{
 				"title":"Other tools",
-				"elements":["Suite Office", "TheGIMP", "Inkscape", "Usual office tools"]
+				"elements":["Office Suite", "TheGIMP", "Inkscape", "Usual office tools"]
 			},
 			{
 				"title":"Languages",
@@ -57,14 +57,14 @@
 				"start":"October 2015",
 				"duration":"1 year and 10 months",
 				"job-title":"Application Development Engineer",
-				"description":"managed the migration of the payment software to the new Tetra terminals (embedded Linux), trobleshooted issues and implemented new features using C language.",
-				"company-postal-address":"Ingenico Suisse SA, Granges-paccot, 1763, Switzerland" 
+				"description":"managed the migration of the payment software to the new Tetra terminals (embedded Linux), troubleshooted issues and implemented new features using C language.",
+				"company-postal-address":"Ingenico Suisse SA, Granges-Paccot, 1763, Switzerland" 
 			},
 			{
 				"start":"March 2015",
 				"duration":"5 months",
 				"job-title":"Software Design Engineer",
-				"description":"prototyped a remote support solution in Python and continued to work on the Wireless Radio access point.",
+				"description":"prototyped a remote support solution in Python and worked on a Json-Rpc C++ library for the Wireless Radio access point project.",
 				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France" 
 			},
 			{
@@ -78,7 +78,7 @@
 				"start":"February 2014",
 				"duration":"6 months",
 				"job-title":"Software Design Engineer Intern",
-				"description":"developed a tool using C++ and Qt framework to configure Legrand's Zigbee Home Automation product.",
+				"description":"developed a tool using C++ and Qt framework to configure Legrand's Zigbee Home Automation products.",
 				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France" 
 			},
 			{

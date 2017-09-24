@@ -4,6 +4,7 @@ require 'json'
 
 #A script to generate the html page from erb files and json file
 
+i18n_file = "i18n.json"
 json_file = 'cv_generic.json'
 output_filename = 'output.html'
 
@@ -18,10 +19,12 @@ def renderTemplate(filename)
 	result=Tilt::ERBTemplate.new(filename).render(self)
 end
 
+@i18n_full = JSON.load(File.new(i18n_file))
 @cv = JSON.load(File.new(json_file))
 @header = @cv["header"]
 @skills = @cv["skills"]
 @content = @cv["content"]
+@i18n = @i18n_full[@cv["i18n"]]
 
 File.write(output_filename, renderTemplate('main.erb'))
 

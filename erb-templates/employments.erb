@@ -1,5 +1,5 @@
 <div class="d-flex flex-column">
-	<h2>Employments</h2>
+	<h2><%= @i18n["employments-title"]%></h2>
 	<% colors=["lightgray", "darkergray"] %>
 	<% color_index=0 %>
 
@@ -12,7 +12,7 @@
 		<p class="text-right text-nowrap font-italic"><%= employment["company-postal-address"] %></p>
 	</div>
 	<div class="<%= color %> d-flex flex-column content-entry-line">
-		<p class="text-justify description"><span class="title"><%= employment["job-title"] %> :</span> <%= employment["description"] %></p>
+		<p class="text-justify description"><span class="title"><%= employment["job-title"] %>:</span> <%= employment["description"] %></p>
 	</div>
 	<% end %>
 	

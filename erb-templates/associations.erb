@@ -1,5 +1,5 @@
 <div class="d-flex flex-column">
-	<h2>Associational Activities</h2>
+	<h2><%= @i18n["assications-title"] %></h2>
 
 	<% colors=["lightgray", "darkergray"] %>
 	<% color_index=0 %>
@@ -13,7 +13,7 @@
 		<p class="text-right text-nowrap font-italic"><%= association["company-postal-address"] %></p>
 	</div>
 	<div class="<%= color %> content-entry-line">
-		<p class="text-justify description"><span class="title"><%= association["job-title"] %> :</span> <%= association["description"] %></p>
+		<p class="text-justify description"><span class="title"><%= association["job-title"] %>:</span> <%= association["description"] %></p>
 	</div>
 	<% end %>
 

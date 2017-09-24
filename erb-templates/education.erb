@@ -1,5 +1,5 @@
 <div class="d-flex flex-column">
-	<h2>Education and training</h2>
+	<h2><%= @i18n["education-title"]%></h2>
 	<% colors=["lightgray", "darkergray"] %>
 	<% color_index=0 %>
 
@@ -7,12 +7,12 @@
 	<% color_index = color_index+1 %>
 	<% color = colors[color_index%2] %>
 	<div class="<%= color %> d-flex flex-row content-entry-line">
-		<p>Graduated in <%= diploma["graduation-year"] %></p>
+		<p><%= @i18n["education-graduated-text"] %> <%= diploma["graduation-year"] %></p>
 		<div style="flex:1;"></div>	<!--flex:1 here in code is dirty but bootstrap doesn't seem to provide class to set strech proportions-->
 		<p class="text-right text-nowrap font-italic"><%= diploma["school-postal-address"] %></p>
 	</div>
 	<div class="<%= color %> d-flex flex-column content-entry-line">
-		<p class="text-justify description"><span class="title"><%= diploma["diploma-name"] %>,</span> <span class="font-italic">Specialized in <%= diploma["specialization-name"] %></span><%= '<span class="font-italic">,</span> (Obtained Merit)' if diploma["merit"] %></p>
+		<p class="text-justify description"><span class="title"><%= diploma["diploma-name"] %>,</span> <span class="font-italic"><%= @i18n["education-specialized-text"] %> <%= diploma["specialization-name"] %></span><%= '<span class="font-italic">,</span> (Obtained Merit)' if diploma["merit"] %></p>
 	</div>
 	<% end %>
 

@@ -1,8 +1,8 @@
 <div class="personal-profile d-flex flex-column">
 	
-	<h1><%= @personal_profile["title"] %></h1>
+	<h1><%= @i18n["personal-profile-title"] %></h1>
 	<p> <%= @personal_profile["adjectives"].join(', ') %> </p>
-	<p><span class="font-italic">Career objective:</span> <%= @personal_profile["career-objective"] %></p>
+	<p><span class="font-italic"><%= @i18n["personal-profile-carrer-objective"] %>:</span> <%= @personal_profile["career-objective"] %></p>
 	<% @personal_profile["strong-points"].each do |point| %>
 			<p><%= point %></p>
     <% end %>

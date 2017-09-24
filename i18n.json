@@ -1,0 +1,25 @@
+{
+	"en": {
+		"personal-profile-title": "Personal profile",
+		"personal-profile-carrer-objective": "Career objective",
+		"skills-title": "Skills",
+		"employments-title": "Employments",
+		"education-title": "Education and training",
+		"education-graduated-text": "Graduated in",
+		"education-specialized-text": "Specialized in",
+		"assiciations-title": "Associational Activities",
+		"interests-title": "Interests"
+	},
+	"fr":
+	{
+		"personal-profile-title": "Profil personnel",
+		"personal-profile-carrer-objective": "Objectif de carrière ",
+		"skills-title": "Compétences",
+		"employments-title": "Expériences",
+		"education-title": "Diplômes",
+		"education-graduated-text": "Diplômé en ",
+		"education-specialized-text": "Spécialisation ",
+		"assiciations-title": "Activités Associatives",
+		"interests-title": "Intérêts"
+	}
+}

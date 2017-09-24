@@ -1,46 +1,4 @@
 :root {
-	/*
-	--royal-blue: #344d90;
-	--bright-blue: #337bae;
-	--pool-blue: #5cc5ef;
-	--aegean-blue: #1a405f;
-	--cobalt: #3a5199;
-	--fog: #d4dde1;
-	--blue-gray: #8593ae;
-	--dusk: #002c54;
-	--midnight-blue: #16253d;
-	--blue-raspberry: #008dcb;
-	--cerulean-blue: #217ca3;
-	--steel-blue: #426e86;
-	--sea: #2f496e;
-	--grecian-blue: #2988bc;
-	--lapis: #556dac;
-	--electric-blue: #4897d8;
-	--bluebell: #92aac7;
-	--indigo-ink: #283655;
-	--blueberry: #4d648d;
-	--periwinkle: #d0e1f9;
-	--aqua-blue: #31a9b8;
-	--peacock: #1e656d;
-	--navy: #00293c;
-	--indigo: #2d4262;
-	--dark-navy: #011a27;
-	--glacier-blue: #1995ad;
-	--ice: #a1d6e2;
-	--blue-sky: #4cb5f5;
-	--sky: #375e97;
-
-	--color-first: #dbe5ff;
-	--color-second: #678ffe;
-	*/
-	/*
-	--aliceblue: rgba(240, 248, 255, 1.0);
-	--verylightskyblue: rgba(210, 243, 250, 1.0);
-	--lightskyblue: rgba(135, 206, 250, 1.0);
-	--skyblue: rgba(135, 206, 235, 1.0);
-	--deepskyblue: rgba(0, 191, 250, 1.0);
-	--midnightblue: rgba(25, 25, 112, 1.0);*/
-
 	--hsl-base: 216;
 	--hsl-sat: 100%;
 	--hsl-very-dark: 15%;
@@ -105,7 +63,7 @@
 
 	.header
 	{
-		background-color: var(--header-background-color);/*#b3e7fb;*/
+		background-color: var(--header-background-color);
 		color: var(--header-font-color);
 		position: absolute;
 		top:0;
@@ -132,7 +90,6 @@
 		min-height:2cm;
 		max-width:2cm;
 		max-height:2cm;
-		/*position: absolute; z-index: 1; top: 0.15cm; right: 0.25cm;*/
 	}
 
 	.header .centimeter
@@ -162,7 +119,7 @@
 
 	.header .personal-profile
 	{
-		background-color: var(--personal-profile-background-color);/*#cceffc;*/
+		background-color: var(--personal-profile-background-color);
 		color: var(--personal-profile-font-color);
 		padding:0.25cm;
 		max-width: 10.5cm;
@@ -220,7 +177,7 @@
 
 	.skills
 	{
-		background-color: var(--skills-background-color);/*#cceffc;*/
+		background-color: var(--skills-background-color);
 		color: var(--skills-font-color);
 		position: absolute;
 		top:7cm;

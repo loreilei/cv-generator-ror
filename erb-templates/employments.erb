@@ -15,26 +15,5 @@
 		<p class="text-justify description"><span class="title"><%= employment["job-title"] %>:</span> <%= employment["description"] %></p>
 	</div>
 	<% end %>
-	
-
-	<!--
-	<div class="container">
-		<% colors=["lightgray", "darkergray"] %>
-		<% color_index=0 %>
-
-		<% @employments.each do |employment| %>
-		<% color_index = color_index+1 %>
-		<% color = colors[color_index%2] %>
-		<div class="row <%= color %> content-entry-first-line">
-			<div class="col pl-3"><p><%= employment["start"] %> (<%= employment["duration"] %>)</p></div>
-			<div class="col pr-3"><p class="text-right text-nowrap font-italic"><%= employment["company-postal-address"] %></p></div>
-		</div>
-		<div class="row <%= color %> content-entry-second-line">
-			<div class="col-12 px-3">
-			<p class="text-justify description"><span class="font-weight-bold"><%= employment["job-title"] %> :</span> <%= employment["description"] %></p>
-			</div>
-		</div>
-		<% end %>
-	</div>-->
 </div>
 <%= renderTemplate('content-line.erb') %>

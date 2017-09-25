@@ -12,7 +12,7 @@
 		<p class="text-right text-nowrap font-italic"><%= diploma["school-postal-address"] %></p>
 	</div>
 	<div class="<%= color %> d-flex flex-column content-entry-line">
-		<p class="text-justify description"><span class="title"><%= diploma["diploma-name"] %>,</span> <span class="font-italic"><%= @i18n["education-specialized-text"] %> <%= diploma["specialization-name"] %></span><%= '<span class="font-italic">,</span> (Obtained Merit)' if diploma["merit"] %></p>
+		<p class="text-justify description"><span class="title"><%= diploma["diploma-name"] %>,</span> <span class="font-italic"><%= @i18n["education-specialized-text"] %> <%= diploma["specialization-name"] %></span><%= '<span class="font-italic">,</span> ' + diploma["merit"]  if diploma["merit"] %></p>
 	</div>
 	<% end %>
 

@@ -5,7 +5,8 @@ require 'json'
 #A script to generate the html page from erb files and json file
 
 i18n_file = "i18n.json"
-json_file = 'cv_generic.json'
+json_file = ARGV[0]
+json_file = 'cv_generic.json' if json_file.nil?
 output_filename = 'output.html'
 
 def titleize(title)

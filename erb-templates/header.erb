@@ -7,11 +7,18 @@
 	</div>
     <p class="subtitle"><%= @header["subtitle"] %></p>
     <div class="row vertical-align-center">
-	    <div class="col d-flex flex-row justify-content-around align-items-center">
+    	<% align_type = "around" %>
+    	<% align_type = "between" unless @header["watermark"].nil? %>
+	    <div class="col d-flex flex-row justify-content-<%= align_type %> align-items-center">
 	    	<% @personal_info = @header["personal-info"]%>
 	    	<%= renderTemplate('personal-info.erb') %>
 	    	<% @personal_profile = @header["personal-profile"]%>
 	    	<%= renderTemplate('personal-profile.erb') %>
+	    	<% unless @header["watermark"].nil? %>
+	    	<div class="d-flex flex-column justify-content-end align-self-end watermark">
+		    	<p class="text-nowrap"><%= @header["watermark"] %></p>
+		    </div>
+		    <% end %>
 	    </div>
     </div>
 </div>

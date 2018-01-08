@@ -14,6 +14,7 @@
 	--header-title-color: hsl(var(--hsl-base), var(--hsl-sat), var(--hsl-very-dark));
 	--header-subtitle-color: hsl(var(--hsl-base), var(--hsl-sat), var(--hsl-dark));
 	--header-icon-color: hsl(var(--hsl-base), var(--hsl-sat), var(--hsl-black));
+	--header-watermark-color: hsl(var(--hsl-base), var(--hsl-sat), var(--hsl-light));
 
 	--personal-profile-background-color: hsl(var(--hsl-base), var(--hsl-sat), var(--hsl-light));
 	--personal-profile-font-color: hsl(var(--hsl-base), var(--hsl-sat), var(--hsl-black));
@@ -71,6 +72,15 @@
 		width: 21cm;
 		height:7cm;
 		padding:0.25cm;		
+	}
+
+	.header .watermark
+	{
+		color: var(--header-watermark-color);
+		font-size: 7pt;
+		max-width: 1px;
+		max-height: 1px;
+		-webkit-transform: rotate(-90deg);
 	}
 
 	.header .vertical-align-center {

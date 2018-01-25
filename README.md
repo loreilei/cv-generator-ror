@@ -1,6 +1,6 @@
 This is a small environment I use to generate a resume.
 
-The idea is to have an HTML layout (that I created tahnks to bootsrap) and  a JSON file.
+The idea is to have an HTML layout (that I created thanks to bootstrap) and a JSON file.
 
 The JSON file contains the information to put in the layout.
 
@@ -10,6 +10,6 @@ I can now print the HTML page into a PDF and voilà, I have a nice PDF resume.
 
 Feel free to use this for your personal usage.
 
-Once phanjtomjs manage to handle flexbox properties correctly, it might be a nice idea to use it to automatize the PDF generation instead of using chromium each time a new resume is edited.
+Once phantomjs manage to handle flexbox properties correctly, it might be a nice idea to use it to automatize the PDF generation instead of using chromium each time a new resume is edited.
 
 Required gems for the ruby script: tilt 

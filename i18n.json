@@ -8,7 +8,8 @@
 		"education-graduated-text": "Graduated in",
 		"education-specialized-text": "Specialized in",
 		"associations-title": "Associational Activities",
-		"interests-title": "Interests"
+		"interests-title": "Interests",
+		"at":"at"
 	},
 	"fr":
 	{
@@ -20,6 +21,7 @@
 		"education-graduated-text": "Diplômé en ",
 		"education-specialized-text": "Spécialisation ",
 		"associations-title": "Activités Associatives",
-		"interests-title": "Intérêts"
+		"interests-title": "Intérêts",
+		"at":"chez"
 	}
 }

@@ -1,16 +1,16 @@
+
 <div class="skills d-flex flex-column justify-content-between align-items-center">
     <h2 class="align-self-center"><%= @i18n["skills-title"] %></h2>
-        <% @cv["skills"]["sections"].each do |section| %>
-        <div class="d-flex flex-column align-items-center">
-            <h3 class="text-center"><%= section["title"] %></h3>
-                <ul class="m-auto">
-        	    <% section["elements"].each do |element| %>
-        	    <li><%= element %></li>
-        	    <% end %>
-        </div>
-        
-        <% unless section.equal?(@cv["skills"]["sections"].last) %>
-        <div class="skills-line"></div>
-        <% end %>
-        <% end %>
+    <div class="d-flex flex-row flex-wrap justify-content-between align-items-center">
+            <% @cv["skills"]["sections"].each do |section| %>
+            <div class="skills-frame d-flex flex-column align-items-center">
+                <h3 class="text-center"><%= section["title"] %></h3>
+                    <table class="table">
+                	    <% section["elements"].each do |element| %>
+                	    <tr><td>✓</td><td><%= element["name"] %></td/><td class="text-right"><div class="skills-stars-outer"><div class="skills-stars-inner" style="width:<%= element["rating"]/5.0*100.0 %>%"></div> </div></td></tr>
+                	    <% end %>
+                    </table>
+            </div>
+            <% end %>
+    </div>
 </div>

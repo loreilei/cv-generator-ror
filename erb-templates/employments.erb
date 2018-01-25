@@ -1,4 +1,4 @@
-<div class="d-flex flex-column">
+<div class="d-flex flex-column text-center" style="margin-bottom: 0.25cm;">
 	<h2><%= @i18n["employments-title"]%></h2>
 	<% colors=["lightgray", "darkergray"] %>
 	<% color_index=0 %>
@@ -6,14 +6,21 @@
 	<% @employments.each do |employment| %>
 	<% color_index = color_index+1 %>
 	<% color = colors[color_index%2] %>
+	<div class="<%= color %> d-flex flex-row content-entry-line align-items-center justify-content-center">
+		<p><span class="title"><%= employment["job-title"] %></span> <%= @i18n["at"] %> <%= employment["company-name"] %></p>
+	</div>
 	<div class="<%= color %> d-flex flex-row content-entry-line">
-		<p><%= employment["start"] %> (<%= employment["duration"] %>)</p>
+		<i class="icon ion-calendar"></i><p><%= employment["start"] %> - <%= employment["end"] %></p>
 		<div style="flex:1;"></div>	<!--flex:1 here in code is dirty but bootstrap doesn't seem to provide class to set strech proportions-->
-		<p class="text-right text-nowrap font-italic"><%= employment["company-postal-address"] %></p>
+		<i class="icon ion-location"></i><p class="text-right text-nowrap font-italic"><%= employment["company-postal-address"] %></p>
 	</div>
 	<div class="<%= color %> d-flex flex-column content-entry-line">
-		<p class="text-justify description"><span class="title"><%= employment["job-title"] %>:</span> <%= employment["description"] %></p>
+		<p class="text-justify description"><%= employment["description"] %></p>
 	</div>
+	<% unless employment["about-company"].nil? %>
+		<div class="<%= color %> d-flex flex-column content-entry-line">
+			<p class="text-justify about-company"><i class="icon ion-information-circled"></i><%= employment["about-company"] %></p>
+		</div>
+	<% end %>
 	<% end %>
 </div>
-<%= renderTemplate('content-line.erb') %>

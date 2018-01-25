@@ -66,11 +66,7 @@
 	{
 		background-color: var(--header-background-color);
 		color: var(--header-font-color);
-		position: absolute;
-		top:0;
-		left:0;
 		width: 21cm;
-		height:7cm;
 		padding:0.25cm;		
 	}
 
@@ -189,11 +185,7 @@
 	{
 		background-color: var(--skills-background-color);
 		color: var(--skills-font-color);
-		position: absolute;
-		top:7cm;
-		left:0;
-		width: 5cm;
-		height:22.7cm;
+		width: 21cm;
 		padding:0.25cm;
 		font-size: 10.5pt;
 	}
@@ -248,20 +240,58 @@
 	    border-top: 1px solid var(--skills-line-color);
 	}
 
+	.skills-frame
+	{
+		min-width:6.5cm;
+		max-width:6.5cm;
+	}
+
+	.skills-stars-outer {
+	  display: inline-block;
+	  position: relative;
+	}
+	 
+	.skills-stars-outer::before
+	{
+	  content: "○○○○○";
+	  /*content: "☆☆☆☆☆";*/
+	}
+	 
+	.skills-stars-inner
+	{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  white-space: nowrap;
+	  overflow: hidden;
+	}
+	 
+	.skills-stars-inner::before
+	{
+	  content: "◉◉◉◉◉";
+	  /*content: "★★★★★";*/
+	}
+
+	.skills .table
+	{
+		margin:0px;
+	}
+
+	.skills .table td
+	{
+		border: 0px solid black;
+		padding:0px;
+	}
+
 	.content
 	{
 		background-color: white;
 		color: var(--content-font-color);
-		position: absolute;
-		top:7cm;
-		left:5cm;
-		width: 16cm;
-		height: 22.7cm;
+		width: 21cm;
 		padding-top:0.25cm;
 		padding-left: 0.25cm;
 		padding-right: 0.25cm;
 		padding-bottom:0.25cm;
-		
 		display:flex;
   		flex-direction:column;
   		align-items: center;
@@ -327,7 +357,7 @@
 		padding-bottom: 0.075cm;
 		padding-left: 0.33cm;
 		padding-right: 0.33cm;
-		min-width:15.5cm;
+		min-width:21cm;
 	}
 
 	.content-entry-first-line
@@ -345,5 +375,25 @@
 	.content-interest-category
 	{
 		padding-left: 0.5cm;
+	}
+
+	.content .icon
+	{
+		margin-right:0.15cm;
+		font-size: 12.5pt;
+		line-height: 1;
+		color: var(--header-icon-color);
+	}
+
+	.page-break
+	{
+		display: none;
+		page-break-before:always;
+	}
+
+	.content .about-company, .about-school
+	{
+		line-height:1.2;
+		font-style: italic;
 	}
 }

@@ -1,4 +1,4 @@
-<div class="d-flex flex-column">
+<div class="d-flex flex-column text-center" style="margin-bottom: 0.25cm;">
 	<h2><%= @i18n["associations-title"] %></h2>
 
 	<% colors=["lightgray", "darkergray"] %>
@@ -7,35 +7,16 @@
 	<% @associations.each do |association| %>
 	<% color_index = color_index+1 %>
 	<% color = colors[color_index%2] %>
+	<div class="<%= color %> d-flex flex-row content-entry-line align-items-center justify-content-center">
+		<p><span class="title"><%= association["job-title"] %></span> <%= @i18n["at"] %> <%= association["company-name"] %></p>
+	</div>
 	<div class="<%= color %> d-flex flex-row content-entry-line">
-		<p><%= association["start"] %> (<%= association["duration"] %>)</p>
+		<i class="icon ion-calendar"></i><p><%= association["start"] %> - <%= association["end"] %></p>
 		<div style="flex:1;"></div>	<!--flex:1 here in code is dirty but bootstrap doesn't seem to provide class to set strech proportions-->
-		<p class="text-right text-nowrap font-italic"><%= association["company-postal-address"] %></p>
+		<i class="icon ion-location"></i><p class="text-right text-nowrap font-italic"><%= association["company-postal-address"] %></p>
 	</div>
 	<div class="<%= color %> content-entry-line">
-		<p class="text-justify description"><span class="title"><%= association["job-title"] %>:</span> <%= association["description"] %></p>
+		<p class="text-justify description"><%= association["description"] %></p>
 	</div>
 	<% end %>
-
-
-	<!--
-	<div class="container">
-		<% colors=["lightgray", "darkergray"] %>
-		<% color_index=0 %>
-
-		<% @associations.each do |association| %>
-		<% color_index = color_index+1 %>
-		<% color = colors[color_index%2] %>
-		<div class="row <%= color %> content-entry-first-line">
-			<div class="col pl-3"><p><%= association["start"] %> (<%= association["duration"] %>)</p></div>
-			<div class="col pr-3"><p class="text-right text-nowrap font-italic"><%= association["company-postal-address"] %></p></div>
-		</div>
-		<div class="row <%= color %> content-entry-second-line">
-			<div class="col-12 px-3">
-			<p class="text-justify description"><span class="font-weight-bold"><%= association["job-title"] %> :</span> <%= association["description"] %></p>
-			</div>
-		</div>
-		<% end %>
-	</div>-->
 </div>
-<%= renderTemplate('content-line.erb') %>

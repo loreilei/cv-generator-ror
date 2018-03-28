@@ -6,7 +6,7 @@
 	<% @education.each do |diploma| %>
 	<% color_index = color_index+1 %>
 	<% color = colors[color_index%2] %>
-	<div class="<%= color %> d-flex flex-row content-entry-line align-items-center justify-content-center">
+	<div class="<%= color %> d-flex flex-row content-entry-line align-items-center justify-content-center" style="margin-top:0cm;margin-bottom:0cm;"> <!-- Personalisation of space -->
 		<p><span class="title"><%= diploma["diploma-name"] %></span>, <span class="font-italic"><%= @i18n["education-specialized-text"] %> <%= diploma["specialization-name"] %></span> <%= @i18n["at"] %> <%= diploma["school-name"] %></p>
 	</div>
 	<div class="<%= color %> d-flex flex-row content-entry-line">

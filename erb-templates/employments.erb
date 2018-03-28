@@ -6,7 +6,7 @@
 	<% @employments.each do |employment| %>
 	<% color_index = color_index+1 %>
 	<% color = colors[color_index%2] %>
-	<div class="<%= color %> d-flex flex-row content-entry-line align-items-center justify-content-center">
+	<div class="<%= color %> d-flex flex-row content-entry-line align-items-center justify-content-center" style="margin-top:0cm;margin-bottom:0cm;"> <!-- Personalisation of space -->
 		<p><span class="title"><%= employment["job-title"] %></span> <%= @i18n["at"] %> <%= employment["company-name"] %></p>
 	</div>
 	<div class="<%= color %> d-flex flex-row content-entry-line">

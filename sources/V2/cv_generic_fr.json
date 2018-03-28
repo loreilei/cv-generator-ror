@@ -1,0 +1,188 @@
+{
+	"i18n": "fr",
+	"header":{
+		"name":"Alexandre Poirot",
+		"title": "Ingénieur logiciel",
+		"subtitle": "Master en conception logicielle et en administration des réseaux et des machines",
+		"qrcode":{"link_target":"https://www.linkedin.com/in/alexandre-poirot-14784194", "img":"qrcode_linkedin_profile_detoured_new_blue.png"},
+		"personal-info":{
+			"postal-address":{"icon":"ion-android-mail","text":"Rue de la carrière 12, 1700 Fribourg, Switzerland"},
+			"phone-number":{"icon":"ion-android-phone-portrait","text":"079 390 83 66"},
+			"email-address":{"icon":"ion-at","text":"alexandre.poirot@gmail.com"},
+			"birthdate":{"icon":"ion-calendar","text":"15.09.1989"},
+			"driving-license":{"icon":"ion-android-car","text":"Permis de conduire et véhicule personel"},
+			"working-permit":{"icon":"ion-card","text":"Permis de travail Suisse B"}
+		},
+		"personal-profile":{
+			"title": "Personal profile",
+			"adjectives":["Curieux", "Autodidacte", "Ouvert d'esprit"],
+			"career-objective":"améliorer mes compétences en tant qu'Ingénieur logiciel en travaillant dans un environnement stimulant",
+			"strong-points":[
+				"2 ans d'expérience en développement avec le langage C++",
+				"facilité d'adaptation aux nouveaux environnements et maitrise rapide de nouvelles technologies"
+			]
+		}
+	},
+	"skills":{
+		"sections":[
+			{
+				"title":"Concepts et langages de programmation",
+				"elements":[
+					{"name":"C++ (avec Qt)","rating":5},
+					{"name":"Ruby","rating":3.5},
+					{"name":"Python","rating":2.5},
+					{"name":"Structures de données","rating":4},
+					{"name":"Algorithmes","rating":4},
+					{"name":"Patrons de conception","rating":4}
+				]
+			},
+			{
+				"title":"Administration réseau et système",
+				"elements":[
+					{"name":"Protocoles du modèle OSI (TCP, UDP, IP, Wi-Fi, Ethernet, ...)","rating":4},
+					{"name":"Conception de logiciels distribués/multi-tiers","rating":4.5},
+					{"name":"Conception de logiciels multithreadés","rating":4.5},
+					{"name":"GNU/Linux","rating":4.5}
+				]
+			},
+			{
+				"title":"Technologies Web",
+				"elements":[
+					{"name":"Apache/Nginx","rating":4},
+					{"name":"MariaDB/MySQL","rating":3.5},
+					{"name":"SQLite","rating":4},
+					{"name":"PostgreSQL","rating":3.5},
+					{"name":"Ruby On Rails","rating":3.5},
+					{"name":"Symfony Framework","rating":3},
+					{"name":"Bootstrap","rating":4}
+				]
+			},			
+			{
+				"title":"Outils de développement",
+				"elements":[
+					{"name":"git","rating":4.5},
+					{"name":"Chaines de compilation","rating":4.5},
+					{"name":"GNU Autotools","rating":4}
+				]
+			},
+			{
+				"title":"Autres outils",
+				"elements":[
+					{"name":"Office Suite","rating":3.5},
+					{"name":"TheGIMP","rating":3.5},
+					{"name":"Inkscape","rating":4}
+				]
+			},
+			{
+				"title":"Langues",
+				"elements":[
+					{"name":"French","rating":5},
+					{"name":"English","rating":4.5}
+				]
+			}
+		]
+	},
+	"content":{
+		"employments":
+		[
+			{
+				"start":"Octobre 2015",
+				"end":"Août 2017",
+				"job-title":"Ingénieur en Développement d'Applications",
+				"description":"Gestion de la migration de l'application de paiement sur la nouvelle gamme de terminaux (GNU/Linux embarqué), correction de bugs et implémentation de nouvelles fonctionalités en langage C.",
+				"company-name":"Ingenico",
+				"company-postal-address":"Ingenico Suisse SA, Granges-Paccot, 1763, Switzerland",
+				"about-company":"Ingenico est le leader mondial de solutions de paiement électronique. Son catalogue de produits varie des terminaux de paiement aux solutions de paiement pour l'e-commerce."
+			},
+			{
+				"start":"Mars 2015",
+				"end":"Juillet 2015",
+				"job-title":"Ingénieur Logiciel",
+				"description":"Prototypage d'une solution de support à distance en Python et implémentation de nouvelles fonctionalités pour la bibiliothèque C++ Json-Rpc pour le projet du point d'accès sans fil.",
+				"company-name":"Legrand",
+				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France",
+				"about-company":"Legrand est le leader mondial dans l'infrastruture électrique et numérique du batiment. Sa gamme de produits très diversifiée permet d'équiper aussi bien les particuliers que les professionnels." 
+			},
+			{
+				"start":"Juillet 2014",
+				"end":"Décembre 2014",
+				"job-title":"Ingénieur Logiciel",
+				"description":"Remaniement du logiciel cœur d'un point d'accès sans fil. L'ancien logiciel était écrit en C et était difficilement maintenable. Le logiciel remanié est écrit en C++ et est plus modulaire.",
+				"company-name":"Legrand",
+				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France" 
+			},
+			{
+				"start":"Février 2014",
+				"end":"Juillet 2014",
+				"job-title":"Stagiaire Ingénieur Logiciel",
+				"description":"Développement en C++ et Qt d'un outil de configuration pour les produits de domotique Zigbee de Legrand.",
+				"company-name":"Legrand",
+				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France" 
+			},
+			{
+				"start":"Janvier 2013",
+				"end":"June 2013",
+				"job-title":"Étudiant Ingénieur Logiciel",
+				"description":"Prototypage d'une solution pour localiser les éléments d'un datacenter pendant le projet industriel de l'Esisar pour Legrand.",
+				"company-name":"Legrand",
+				"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France" 
+			}
+		],
+		"education":[
+			{
+				"graduation-year":"2014",
+				"diploma-name":"Diplôme d'ingénieur (niveau Master)",
+				"specialization-name":"Informatique et réseaux",
+				"school-name":"Grenoble-INP Esisar",
+				"school-postal-address":"Grenoble-INP Esisar, Valence, 26000, France",
+				"description":"Cette formation m'a permis d'apprendre énorment sur les sciences de l'information et sur le savoir-être d'un ingénieur. Exemples de sujets abordés lors de la formation : administration système sur GNU/Linux, administration et architecture des réseaux locaux et mondiaux, principes de conceptions logicielles (programmation orientée objet, patrons de conceptions...), théorie de l'information, théorie du signal, théorie des langages..."
+			},
+			{
+				"graduation-year":"2010",
+				"diploma-name":"DUT Génie Électrique et Informatique Industrielle",
+				"specialization-name":"informatique industrielle et réseaux",
+				"school-name":"IUT de Rouen",
+				"school-postal-address":"IUT de Rouen, Mont-saint-Aignan, 76130, France"
+			},
+			{
+				"graduation-year":"2008",
+				"diploma-name":"Baccalauréat Scientifique",
+				"specialization-name":"Sciences de l'ingénieur",
+				"merit":"Obtained Merit",
+				"school-name":"Lycée T. Corneille",
+				"school-postal-address":"Lycée T. Corneille, Barentin, 76360, France"
+			}
+		],
+		"associations":
+		[
+			{
+			"start":"Septembre 2012",
+			"end":"Septembre 2013",
+			"job-title":"Président du Club Informatique Esisar",
+			"description":"Organisation d'évènements liés à l'informatique pour le loisir des étudiants.",
+			"company-name":"Club Informatique Esisar",
+			"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France"
+			},
+			{
+			"start":"Décembre 2011",
+			"end":"Décembre 2013",
+			"job-title":"DSI de la Junior Conseil Esisar",
+			"description":"Gestion du système informatique de la Junior Conseil",
+			"company-name":"Junior Conseil Esisar",
+			"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France"
+			},
+			{
+			"start":"Décembre 2010",
+			"end":"Décembre 2011",
+			"job-title":"Président de la Junior Conseil Esisar",
+			"description":"Gestion d'une équipe de 7 personnes afin de permettre aux étudiants de l'Esisar de travailler sur un projet pour une entreprise sur leur temps libre.",
+			"company-name":"Junior Conseil Esisar",
+			"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France"
+			}
+		],
+		"interests":
+		[
+			{"sports":["pêche","slackline","escalade", "natation"]}
+		]
+	}
+}

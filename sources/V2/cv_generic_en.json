@@ -1,0 +1,193 @@
+{
+	"i18n": "en",
+	"header":{
+		"name":"Alexandre Poirot",
+		"title": "Software Engineer",
+		"subtitle": "Applying to a Software Engineer (Qt) position at bbv Software Services in Zürich, Switzerland",
+		"qrcode":{"link_target":"https://www.linkedin.com/in/alexandre-poirot-14784194", "img":"qrcode_linkedin_profile_detoured_new_blue.png"},
+		"personal-info":{
+			"postal-address":{"icon":"ion-android-mail","text":"Rue de la carrière 12, 1700 Fribourg, Switzerland"},
+			"phone-number":{"icon":"ion-android-phone-portrait","text":"(+33) 06 42 95 95 41"},
+			"email-address":{"icon":"ion-at","text":"alexandre.poirot@gmail.com"},
+			"birthdate":{"icon":"ion-calendar","text":"15.09.1989"},
+			"driving-license":{"icon":"ion-android-car","text":"Driving license and personal car"},
+			"working-permit":{"icon":"ion-card","text":"B Swiss working permit"},
+			"github-account":{"icon":"ion-social-github","text":"https://github.com/loreilei"}
+		},
+		"personal-profile":{
+			"title": "Personal profile",
+			"adjectives":["Curious", "Autodidact", "Open-minded"],
+			"career-objective":"acquire experience as a Software Engineer by working in a challenging environment",
+			"strong-points":[
+				"2 years of experience in software development using C++",
+				"Adapt easily to new environments and master quickly new technologies"
+			]
+		},
+		"watermark": "Made with Bootstrap and Ruby"
+	},
+	"skills":{
+		"sections":[
+			{
+				"title":"Programming languages & concepts",
+				"elements":[
+					{"name":"C++ (with Qt)","rating":5},
+					{"name":"Ruby","rating":3.5},
+					{"name":"Python","rating":2.5},
+					{"name":"Data Structures","rating":4},
+					{"name":"Algorithms","rating":4},
+					{"name":"Design Patterns","rating":4}
+				]
+			},
+			{
+				"title":"Networking & System administration",
+				"elements":[
+					{"name":"OSI layer protocols (TCP, UDP, IP, Wi-Fi, Ethernet, ...)","rating":4},
+					{"name":"Distributed/Multitier software design","rating":4.5},
+					{"name":"Multithreaded software design","rating":4.5},
+					{"name":"GNU/Linux","rating":4.5}
+				]
+			},
+			{
+				"title":"Web Technologies",
+				"elements":[
+					{"name":"Apache/Nginx","rating":4},
+					{"name":"MariaDB/MySQL","rating":3.5},
+					{"name":"SQLite","rating":4},
+					{"name":"PostgreSQL","rating":3.5},
+					{"name":"Ruby On Rails","rating":3.5},
+					{"name":"Symfony Framework","rating":3},
+					{"name":"Bootstrap","rating":4}
+				]
+			},			
+			{
+				"title":"Development Tools",
+				"elements":[
+					{"name":"git","rating":4.5},
+					{"name":"Compilation toolchains","rating":4.5},
+					{"name":"GNU Autotools","rating":4}
+				]
+			},
+			{
+				"title":"Other tools",
+				"elements":[
+					{"name":"Office Suite","rating":3.5},
+					{"name":"TheGIMP","rating":3.5},
+					{"name":"Inkscape","rating":4}
+				]
+			},
+			{
+				"title":"Languages",
+				"elements":[
+					{"name":"French","rating":5},
+					{"name":"English","rating":4.5}
+				]
+			}
+		]
+	},
+	"content":{
+		"employments":
+		[
+			{
+				"start":"October 2015",
+				"end":"August 2017",
+				"job-title":"Application Development Engineer",
+				"description":"Managed the migration of the payment software to the new Tetra terminals, troubleshooted issues and implemented new features using C language. Developed a remote update system for the platform.",
+				"company-name":"Ingenico",
+				"company-postal-address":"Ingenico Suisse SA, Granges-Paccot, 1763, Switzerland",
+				"about-company":"Ingenico is the worldwide leader in electronic payment. Its product range goes from payment terminal to e-commerce payment solutions."
+			},
+			{
+				"start":"March 2015",
+				"end":"July 2015",
+				"job-title":"Software Engineer",
+				"description":"Prototyped a remote support solution in Python and worked on a Json-Rpc C++ library for the Wireless Radio access point project.",
+				"company-name":"Legrand",
+				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France",
+				"about-company":"Legrand is the worldwide leader in digital and electrical building's infrastruture. Its very diversified product range allows to equip regular citizen houses as well as professional buildings." 
+			},
+			{
+				"start":"July 2014",
+				"end":"December 2014",
+				"job-title":"Software Engineer",
+				"description":"Refactored the core software of a Wireless Radio access point. Designed a C++ library to ease use of SQLite and SQL queries in C++ code.",
+				"company-name":"Legrand",
+				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France" 
+			},
+			{
+				"start":"February 2014",
+				"end":"July 2014",
+				"job-title":"Software Engineer Intern",
+				"description":"Developed a tool using C++ and Qt framework to configure Legrand's Zigbee Home Automation products. Developed software's graphic interface and core modules.",
+				"company-name":"Legrand",
+				"company-postal-address":"Legrand Isère, Saint-Marcellin, 38160, France" 
+			},
+			{
+				"start":"January 2013",
+				"end":"June 2013",
+				"job-title":"Software Engineer Student",
+				"description":"Designed an identification solution to locate datacenter elements during Esisar's Industrial Project for Legrand company. Participed in all project steps to design the client and server sides of the solution.",
+				"company-name":"Legrand",
+				"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France" 
+			}
+		],
+		"education":[
+			{
+				"graduation-year":"2014",
+				"starting-year":"2010",
+				"diploma-name":"Master Degree in General Engineering",
+				"specialization-name":"Computer Science and Networking",
+				"school-name":"Grenoble-INP Esisar",
+				"school-postal-address":"Grenoble-INP Esisar, Valence, 26000, France",
+				"description":"This formation allowed me to learn a lot about computer science and being a software engineer. Examples of subject teached: system administration on Linux, local and worldwide network architecture and administration, software design principles, signal coding theroy, language theory..."
+			},
+			{
+				"graduation-year":"2010",
+				"starting-year":"2008",
+				"diploma-name":"HND in Electronics and Industrial IT",
+				"specialization-name":"Industrial IT and Networking",
+				"school-name":"IUT de Rouen",
+				"school-postal-address":"IUT de Rouen, Mont-saint-Aignan, 76130, France"
+			},
+			{
+				"graduation-year":"2008",
+				"starting-year":"2004",
+				"diploma-name":"French National high school diploma in Science",
+				"specialization-name":"Engineering Sciences",
+				"merit":"Obtained Merit",
+				"school-name":"Lycée T. Corneille",
+				"school-postal-address":"Lycée T. Corneille, Barentin, 76360, France"
+			}
+		],
+		"associations":
+		[
+			{
+			"start":"September 2012",
+			"end":"September 2013",
+			"job-title":"Head of Esisar's IT Club",
+			"description":"Organized events related to IT for students entertainment. Designed a website to book tickets for events with Symfony and Bootstrap.",
+			"company-name":"Esisar's IT Club",
+			"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France"
+			},
+			{
+			"start":"December 2011",
+			"end":"December 2013",
+			"job-title":"Esisar's Junior Commitee IT Manager",
+			"description":"Managed Esisar's Junior Commitee IT system",
+			"company-name":"Esisar's Junior Commitee",
+			"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France"
+			},
+			{
+			"start":"December 2010",
+			"end":"December 2011",
+			"job-title":"Head of Esisar's Junior Commitee",
+			"description":"Managed a team of 7 people to provide the possibility for students to work on a project for a company during their free-time.",
+			"company-name":"Esisar's Junior Commitee",
+			"company-postal-address":"Grenoble-INP Esisar, Valence, 26000, France"
+			}
+		],
+		"interests":
+		[
+			{"sports":["fishing","slackline","climbing", "swimming"]}
+		]
+	}
+}

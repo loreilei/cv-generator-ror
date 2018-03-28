@@ -1,6 +1,7 @@
 <div class="d-flex flex-column">
-	<% infos=["postal-address", "phone-number", "email-address", "birthdate", "driving-license", "working-permit"]%>
+	<% infos=["postal-address", "phone-number", "email-address", "birthdate", "driving-license", "working-permit", "github-account"]%>
 	<% infos.each do |info| %>
+	<% @info = info %>
 	<% @icon = @personal_info[info]["icon"] %>
 	<% @text = @personal_info[info]["text"] %>
 	<%= renderTemplate('personal-info-line.erb') %>

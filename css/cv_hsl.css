@@ -110,6 +110,10 @@
 		color: var(--header-icon-color);
 	}
 
+	.header a {
+		color: black;
+	}
+
 	.header .table td
 	{
 		padding-top: 0px;

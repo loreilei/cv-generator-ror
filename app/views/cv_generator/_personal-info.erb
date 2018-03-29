@@ -1,0 +1,23 @@
+<div class="d-flex flex-column">
+	<% infos=["postal-address", "phone-number", "email-address", "birthdate", "driving-license", "working-permit", "github-account"]%>
+	<% infos.each do |info| %>
+		<% @info = info %>
+		<% unless @personal_info[info].nil? %>
+			<% @icon = @personal_info[info]["icon"] %>
+			<% @text = @personal_info[info]["text"] %>
+			<%= render 'personal-info-line' %>
+		<% end %>
+	<% end %>
+</div>
+
+<!--
+<div class="container personal-info pr-3">
+		<table class="table">
+			<%# infos=["postal-address", "phone-number", "email-address", "birthdate", "driving-license", "working-permit"]%>
+			<%# infos.each do |info| %>
+			<%# @icon = @personal_info[info]["icon"] %>
+			<%# @text = @personal_info[info]["text"] %>
+			<%#= renderTemplate('personal-info-line.erb') %>
+			<%# end %>
+		</table>
+</div>-->

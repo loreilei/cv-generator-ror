@@ -1,0 +1,23 @@
+<div class="header d-flex flex-column justify-content-between">
+	<div class="d-flex flex-row justify-content-between align-items-start">
+		<p class="name"  style="min-width:5cm;"><%= @header["name"] %></p>
+		<p class="title align-self-end"><%= @header["title"] %></p>
+		<%= render 'qrcode' %>
+	</div>
+    <p class="subtitle"><%= @header["subtitle"] %></p>
+    <div class="row vertical-align-center">
+    	<% align_type = "around" %>
+    	<% align_type = "between" unless @header["watermark"].nil? %>
+	    <div class="col d-flex flex-row justify-content-<%= align_type %> align-items-center">
+	    	<% @personal_info = @header["personal-info"]%>
+	    	<%= render 'personal-info.erb' %>
+	    	<% @personal_profile = @header["personal-profile"]%>
+	    	<%= render 'personal-profile' %>
+	    	<% unless @header["watermark"].nil? %>
+	    	<div class="d-flex flex-column justify-content-end align-self-end watermark">
+		    	<p class="text-nowrap"><%= @header["watermark"] %></p>
+		    </div>
+		    <% end %>
+	    </div>
+    </div>
+</div>

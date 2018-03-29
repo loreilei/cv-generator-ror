@@ -1,0 +1,12 @@
+<!--<tr><td class="text-center align-middle"><i class="icon <%= @icon %>"></i></td><td class="align-middle"><p><%= @text %></p></td></tr>-->
+<div class="d-flex flex-row justify-item-between align-item-center">
+<p class="centimeter text-center"><i class="icon <%= @icon %>"></i></p>
+<!-- <%= @info %>-->
+<% if @info == "email-address" %>
+	<p><a href="mailto:<%= @text %>"><%= @text %></a></p>
+<% elsif @info == "github-account" %>
+	<p><a href="<%= @text %>"><%= @text %></a></p>
+<% else %>
+	<p><%= @text %></p>
+<% end %>
+</div>

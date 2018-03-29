@@ -1,0 +1,8 @@
+<% @qrcode = @cv["header"]["qrcode"] %>
+<% link_start = "" %>
+<% link_end = "" %>
+<% unless @qrcode["link_target"].nil? %>
+<% link_start = "<a href=" + @qrcode["link_target"] + ' class="qrcode" ' + ">" %>
+<% link_end = "</a>" %>
+<% end %>
+<p style="margin-left:3cm;"><%= link_to(image_tag(@qrcode["img"], :alt=> @qrcode["link_target"],:class => "qrcode"), @qrcode["link_target"], :class => "qrcode") %></p>

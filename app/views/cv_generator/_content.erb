@@ -1,0 +1,11 @@
+<div class="content d-flex flex-column justify-content-between">
+	<% @content = @cv["content"] %>
+	<% @employments = @content["employments"] %>
+	<%= render 'employments' %>
+	<% @education = @content["education"] %>
+	<%= render 'education' %>
+	<% @associations = @content["associations"] %>
+	<%= render'associations.erb' %>
+	<% @interests = @content["interests"] %>
+	<%= render 'interests.erb' %>
+</div>

@@ -1,0 +1,8 @@
+<h1>Please upload your json file:</h1>
+<p>
+<%= form_tag({controller: "cv_generator", action: :display}, multipart: true) do %>
+	<%= label_tag 'resume_json_file' %><br />
+	<%= file_field_tag :resume_json_file%><br />
+	<%= submit_tag 'Upload' %>
+<% end %>
+</p>

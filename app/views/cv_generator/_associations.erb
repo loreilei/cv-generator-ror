@@ -1,0 +1,22 @@
+<div class="d-flex flex-column text-center" style="margin-bottom: 0.25cm;">
+	<h2><%= @i18n["associations-title"] %></h2>
+
+	<% colors=["lightgray", "darkergray"] %>
+	<% color_index=0 %>
+
+	<% @associations.each do |association| %>
+	<% color_index = color_index+1 %>
+	<% color = colors[color_index%2] %>
+	<div class="<%= color %> d-flex flex-row content-entry-line align-items-center justify-content-center">
+		<p><span class="title"><%= association["job-title"] %></span> <%= @i18n["at"] %> <%= association["company-name"] %></p>
+	</div>
+	<div class="<%= color %> d-flex flex-row content-entry-line">
+		<i class="icon ion-calendar"></i><p><%= association["start"] %> - <%= association["end"] %></p>
+		<div style="flex:1;"></div>	<!--flex:1 here in code is dirty but bootstrap doesn't seem to provide class to set strech proportions-->
+		<i class="icon ion-location"></i><p class="text-right text-nowrap font-italic"><%= association["company-postal-address"] %></p>
+	</div>
+	<div class="<%= color %> content-entry-line">
+		<p class="text-justify description"><%= raw(association["description"]) %></p>
+	</div>
+	<% end %>
+</div>

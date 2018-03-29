@@ -1,15 +1,9 @@
-This is a small environment I use to generate a resume.
+This is a bit more evolved environment I use to generate a resume. It is a derivated work from https://github.com/loreilei/cv-generator.
 
 The idea is to have an HTML layout (that I created thanks to bootstrap) and a JSON file.
 
 The JSON file contains the information to put in the layout.
 
-I then launch the generate_html.rb script to generate the HTML and open it in Chromium.
-
-I can now print the HTML page into a PDF and voilà, I have a nice PDF resume.
+I just upload the file and then I get the webpage that I can print (using Chromium).
 
 Feel free to use this for your personal usage.
-
-Once phantomjs manage to handle flexbox properties correctly, it might be a nice idea to use it to automatize the PDF generation instead of using chromium each time a new resume is edited.
-
-Required gems for the ruby script: tilt 

@@ -260,6 +260,7 @@
 	.skills-stars-outer::before
 	{
 	  content: "○○○○○";
+	  font-family: sans serif;
 	  /*content: "☆☆☆☆☆";*/
 	}
 	 
@@ -275,6 +276,7 @@
 	.skills-stars-inner::before
 	{
 	  content: "◉◉◉◉◉";
+	  font-family: sans serif;
 	  /*content: "★★★★★";*/
 	}
 

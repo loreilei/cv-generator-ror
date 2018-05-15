@@ -4,7 +4,7 @@
 <!-- <%= @info %>-->
 <% if @info == "email-address" %>
 	<p><a href="mailto:<%= @text %>"><%= @text %></a></p>
-<% elsif @info == "github-account" %>
+<% elsif @info == "github-account" or @info == "linkedin-account" %>
 	<p><a href="<%= @text %>"><%= @text %></a></p>
 <% else %>
 	<p><%= @text %></p>

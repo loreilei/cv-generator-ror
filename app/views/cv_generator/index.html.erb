@@ -3,6 +3,8 @@
 <%= form_tag({controller: "cv_generator", action: :display}, multipart: true) do %>
 	<%= label_tag 'resume_json_file' %><br />
 	<%= file_field_tag :resume_json_file%><br />
+	<%= label_tag 'Portrait Image (optional)' %><br />
+	<%= file_field_tag :portrait_image_file%><br />
 	<%= submit_tag 'Upload' %>
 <% end %>
 </p>

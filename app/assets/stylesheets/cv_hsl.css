@@ -99,6 +99,18 @@
 		max-height:2cm;
 	}
 
+	.header .portrait
+	{
+		min-width:2.5cm;
+		min-height:2.5cm;
+		max-width:2.5cm;
+		max-height:2.5cm;
+		border: 1px solid var(--personal-profile-background-color);
+		border-radius:50%;
+		padding: 5px;
+		background-color:white;
+	}
+
 	.header .centimeter
 	{
 		min-width:1cm;

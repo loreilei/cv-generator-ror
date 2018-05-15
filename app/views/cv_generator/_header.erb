@@ -2,7 +2,11 @@
 	<div class="d-flex flex-row justify-content-between align-items-start">
 		<p class="name"  style="min-width:5cm;"><%= @header["name"] %></p>
 		<p class="title align-self-end"><%= @header["title"] %></p>
-		<%= render 'qrcode' %>
+		<% unless @portrait_image_type.nil? and @portrait_image_b64.nil? %>
+			<%= render 'portrait' %>
+		<% else %>
+			<%= render 'qrcode' %>
+		<% end %>
 	</div>
     <p class="subtitle"><%= @header["subtitle"] %></p>
     <div class="row vertical-align-center">
